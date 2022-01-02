@@ -1,6 +1,11 @@
-import { Controller, Module } from "@nestjs/common"
+import { Controller, Module, Get } from "@nestjs/common";
+import { NestFactory } from "@nestjs/core";
+import { AppModule } from "./app.module";
 
-@Controller()
-class AppController {
+async function bootStrap() {
+  const app = await NestFactory.create(AppModule);
 
+  await app.listen(3000);
 }
+
+bootStrap();
