@@ -54,10 +54,26 @@ Example:
 | `findAll()`               |        `findAll()`        |
 | `create(message: string)` | `create(message: string)` |
 
+## Dependency Injection
+
+Allows us to use the Inversion of Control principle without having to create all the deps ourselves.  
+
+<img src="./course-diagrams/7.dependency-injection.png">
+
+General Flow:
+
+<img src="./course-diagrams/8.dep-injection-flow.png">
+
+_______________________________________________________
+
 ## Nest JS Server Tools Diagram
 
 <img src="./course-diagrams/3.nest-req-res-tools.png">
 
+_______________________________________________________
+
 ## Example Module Diagram
 
 <img src="./course-diagrams/5.messages-module.png">
+
+_______________________________________________________
