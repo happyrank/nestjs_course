@@ -10,4 +10,7 @@ Content-Type: application/json
 }
 
 ### Get a message
-GET http://localhost:3000/messages/507
+GET http://localhost:3000/messages/5071
+
+### TEST
+GET http://localhost:3000/asdasds
