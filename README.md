@@ -64,6 +64,13 @@ General Flow:
 
 <img src="./course-diagrams/8.dep-injection-flow.png">
 
+Dependency Injection *only* within a module
+
+<img src="./course-diagrams/9.dep-injection-within-module.png">
+
+Dependency Injection *between* 2 modules
+
+<img src="./course-diagrams/10-dep-injection-between-modules.png">
 _______________________________________________________
 
 ## Nest JS Server Tools Diagram
