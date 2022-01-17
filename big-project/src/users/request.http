@@ -1,0 +1,9 @@
+### Create a new user
+
+POST http://localhost:10000/auth/signup
+Content-Type: application/json
+
+{
+    "email": "dylan@g.morison.org",
+    "password" : "sfjdsah38uoihj"
+}
