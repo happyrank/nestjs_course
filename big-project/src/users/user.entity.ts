@@ -1,8 +1,14 @@
-import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
+import {
+  AfterInsert,
+  AfterRemove,
+  AfterUpdate,
+  Entity,
+  Column,
+  PrimaryGeneratedColumn,
+} from 'typeorm';
 
-// reach out to our sql database at startup and make sure there is a users table
 @Entity()
-class User {
+export class User {
   @PrimaryGeneratedColumn()
   id: number;
 
@@ -11,6 +17,19 @@ class User {
 
   @Column()
   password: string;
-}
 
-export { User };
+  @AfterInsert()
+  logInsert() {
+    console.log('Inserted User with id', this.id);
+  }
+
+  @AfterUpdate()
+  logUpdate() {
+    console.log('Updated User with id', this.id);
+  }
+
+  @AfterRemove()
+  logRemove() {
+    console.log('Removed User with id', this.id);
+  }
+}
