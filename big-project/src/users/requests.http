@@ -11,10 +11,18 @@ content-type: application/json
 }
 
 ### Find a particular user with a given ID
-GET http://localhost:3000/auth/1
+GET http://localhost:3000/auth/14
 
 ### Find all users with a given email
 GET http://localhost:3000/auth?email=asdf@asdf.com
 
 ### Delete a user with the given id
-DELETE  http://localhost:3000/auth/2
+DELETE http://localhost:3000/auth/2
+
+### Update a user
+PATCH http://localhost:3000/auth/14
+content-type: application/json
+
+{
+  "email" : "b@aaaaa.com"
+}
