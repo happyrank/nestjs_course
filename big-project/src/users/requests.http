@@ -6,7 +6,7 @@ POST http://localhost:3000/auth/signup
 content-type: application/json
 
 {
-  "email": "dyla2n@morison.org",
+  "email": "dyla4n@morison.org",
   "password": "asdlfkasdasdajsd"
 }
 ### Sign in user
@@ -14,9 +14,16 @@ POST http://localhost:3000/auth/signin
 content-type: application/json
 
 {
-  "email": "dyla2n@morison.org",
+  "email": "dylan@morison.org",
   "password": "asdlfkasdasdajsd"
 }
+
+### Signout
+POST http://localhost:3000/auth/signout
+
+### Get signed in user
+GET http://localhost:3000/auth/whoami
+
 
 ### Find a particular user with a given ID
 GET http://localhost:3000/auth/1
@@ -25,7 +32,7 @@ GET http://localhost:3000/auth/1
 GET http://localhost:3000/auth?email=asdf@asdf.com
 
 ### Delete a user with the given id
-DELETE http://localhost:3000/auth/2
+DELETE http://localhost:3000/auth/1
 
 ### Update a user
 PATCH http://localhost:3000/auth/1
@@ -34,3 +41,9 @@ content-type: application/json
 {
   "email" : "b@aaaaa.com"
 }
+
+# ### Set a color
+# GET http://localhost:3000/auth/colors/green
+
+# ### Get a color
+# GET http://localhost:3000/auth/colors
