@@ -6,7 +6,7 @@ POST http://localhost:3000/auth/signup
 content-type: application/json
 
 {
-  "email": "dyla4n@morison.org",
+  "email": "dyla5n@morison.org",
   "password": "asdlfkasdasdajsd"
 }
 ### Sign in user
@@ -23,7 +23,6 @@ POST http://localhost:3000/auth/signout
 
 ### WHOAMI
 GET http://localhost:3000/auth/whoami
-
 
 ### Find a particular user with a given ID
 GET http://localhost:3000/auth/1
