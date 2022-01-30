@@ -14,7 +14,7 @@ POST http://localhost:3000/auth/signin
 content-type: application/json
 
 {
-  "email": "dylan@morison.org",
+  "email": "dyla5n@morison.org",
   "password": "asdlfkasdasdajsd"
 }
 
