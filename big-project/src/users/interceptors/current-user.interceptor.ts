@@ -5,7 +5,7 @@ import {
   ExecutionContext,
 } from '@nestjs/common';
 import { Observable } from 'rxjs';
-import { UsersService } from '../users.service';
+import { UsersService } from '../services/users.service';
 
 @Injectable()
 export class CurrentUserInterceptor implements NestInterceptor {
